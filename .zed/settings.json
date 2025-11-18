@@ -1,0 +1,24 @@
+{
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "!solargraph", "!rubocop"]
+    },
+    "HTML+ERB": {
+      "language_servers": ["herb", "ruby-lsp"]
+    },
+    "JS+ERB": {
+      "language_servers": ["ruby-lsp"]
+    },
+    "YAML+ERB": {
+      "language_servers": ["ruby-lsp"]
+    }
+  },
+  "lsp": {
+    "ruby-lsp": {
+      "initialization_options": {
+        "formatter": "standard",
+        "linters": ["standard"]
+      }
+    }
+  }
+}
