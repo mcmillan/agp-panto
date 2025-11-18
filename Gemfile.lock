@@ -91,6 +91,9 @@ GEM
     erubi (1.13.1)
     globalid (1.3.0)
       activesupport (>= 6.1)
+    http-2 (1.1.1)
+    httpx (1.6.3)
+      http-2 (>= 1.0.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     io-console (0.8.1)
@@ -270,6 +273,7 @@ PLATFORMS
 
 DEPENDENCIES
   debug
+  httpx
   puma (>= 5.0)
   rails (~> 8.1.1)
   ruby-lsp
