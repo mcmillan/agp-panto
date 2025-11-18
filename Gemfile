@@ -24,3 +24,5 @@ group :development, :test do
   gem "standard"
   gem "ruby-lsp"
 end
+
+gem "dockerfile-rails", ">= 1.7", group: :development

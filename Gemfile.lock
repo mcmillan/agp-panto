@@ -87,6 +87,8 @@ GEM
     debug (1.11.0)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    dockerfile-rails (1.7.10)
+      rails (>= 3.0.0)
     drb (2.2.3)
     erb (6.0.0)
     erubi (1.13.1)
@@ -275,6 +277,7 @@ PLATFORMS
 DEPENDENCIES
   alba
   debug
+  dockerfile-rails (>= 1.7)
   httpx
   puma (>= 5.0)
   rails (~> 8.1.1)
