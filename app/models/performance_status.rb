@@ -1,7 +1,4 @@
-class PerformanceStatus
-  include ActiveModel::Model
-  include ActiveModel::Attributes
-
+class PerformanceStatus < ApplicationModel
   attribute :available_seats, :integer
   attribute :capacity, :integer
 

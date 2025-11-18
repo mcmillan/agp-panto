@@ -1,7 +1,4 @@
-class Performance
-  include ActiveModel::Model
-  include ActiveModel::Attributes
-
+class Performance < ApplicationModel
   attribute :id, :string
   attribute :starts_at, :datetime
   attribute :sales_started_at, :datetime
