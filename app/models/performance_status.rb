@@ -2,10 +2,10 @@ class PerformanceStatus
   include ActiveModel::Model
   include ActiveModel::Attributes
 
-  attribute :available, :integer
+  attribute :available_seats, :integer
   attribute :capacity, :integer
 
   def self.from_spektrix(data)
-    new(available: data["available"], capacity: data["capacity"])
+    new(available_seats: data["available"], capacity: data["capacity"])
   end
 end
