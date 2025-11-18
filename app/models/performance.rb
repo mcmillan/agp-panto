@@ -7,10 +7,7 @@ class Performance < ApplicationModel
   delegate :capacity, to: :status
 
   def self.all
-    SpektrixService.instance.get_instances(
-      client_name: ENV["CLIENT_NAME"],
-      event_id: ENV["EVENT_ID"]
-    ).map { from_spektrix(_1) }
+    SpektrixService.instance.get_instances.map { from_spektrix(_1) }
   end
 
   def self.from_spektrix(data)
@@ -19,7 +16,7 @@ class Performance < ApplicationModel
 
   def status
     @status ||= PerformanceStatus.from_spektrix(
-      SpektrixService.instance.get_instance_status(client_name: ENV["CLIENT_NAME"], instance_id: id)
+      SpektrixService.instance.get_instance_status(instance_id: id)
     )
   end
 end
